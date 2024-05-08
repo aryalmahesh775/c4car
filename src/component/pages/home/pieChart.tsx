@@ -7,8 +7,8 @@ function Donutchart() {
       <div className="container-fluid mt-3 mb-3">
         <Chart
           type="donut"
-          width={1349}
-          height={550}
+          width={400}
+          height={400}
           series={[10.1, 89.9]}
           options={{
             labels: ["Accepted Orders", "Cancelled Order"],

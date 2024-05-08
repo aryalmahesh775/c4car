@@ -42,33 +42,40 @@ const Chart = () => {
 
   return (
     <div className="chart-wr">
-      <ResponsiveBar
-        data={data}
-        keys={["degrees", "kelvin"]}
-        indexBy="day"
-        margin={{
-          top: 20,
-          right: 0,
-          bottom: 4,
-          left: 100,
-        }}
-        padding={0.7}
-        groupMode="grouped"
-        colors={["#252525", "#C8C8C8"]}
-        axisTop={null}
-        innerPadding={5}
-        axisRight={null}
-        animate={true}
-        enableGridX
-        enableGridY
-        enableLabel={false}
-        borderRadius={5}
-        axisBottom={{
-          tickSize: 0,
-          tickPadding: 10,
-          tickRotation: 0,
-        }}
-      />
+      <div className="" style={{ height: 200 }}>
+        <ResponsiveBar
+          data={data}
+          keys={["degrees", "kelvin"]}
+          indexBy="day"
+          margin={{ top: 50, right: 50, bottom: 50, left: 50 }}
+          padding={0.7}
+          colors={["#252525", "#ccc"]}
+          groupMode="grouped"
+          axisBottom={{
+            tickSize: 5,
+            tickPadding: 5,
+            tickRotation: 0,
+            legend: "day",
+            legendPosition: "middle",
+            legendOffset: 40,
+          }}
+          borderRadius={5}
+          innerPadding={5}
+          axisLeft={{
+            tickSize: 5,
+            tickPadding: 5,
+            tickRotation: 0,
+            legend: [""], // if want to level the y axis
+            legendPosition: "middle",
+            legendOffset: -40,
+          }}
+          labelSkipWidth={12}
+          labelSkipHeight={12}
+          enableGridY={false} // show row in y axis
+          labelTextColor={{ from: "color", modifiers: [["darker", 1.6]] }}
+          animate={true}
+        />
+      </div>
     </div>
   );
 };
