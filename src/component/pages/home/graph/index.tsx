@@ -13,7 +13,7 @@ import {
   LineElement,
   Filler,
 } from "chart.js";
-import { Bar, Doughnut, Line, Pie } from "react-chartjs-2";
+import { Bar, Doughnut, Pie } from "react-chartjs-2";
 
 ChartJS.register(
   CategoryScale,
@@ -150,7 +150,7 @@ export const DoughnutChart = ({
 
   return (
     <div className="h-[500px] w-[500px]">
-      <Doughnut height={80} data={doughnutData} options={doughnutOptions} />
+      <Doughnut width={""} data={doughnutData} options={doughnutOptions} />
     </div>
   );
 };

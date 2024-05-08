@@ -1,8 +1,7 @@
 import React from "react";
-import ChartBarGraph from "./chart";
-import MyResponsivePie from "./pieChart";
-import BarCharts from "./mahesh/chart/BarChart";
-import PieCharts from "./mahesh/chart/PieChart";
+import BarCharts from "./graph/chart/BarChart";
+import PieCharts from "./graph/chart/PieChart";
+import { statIcon } from "../../../assets";
 
 const HomePage = () => {
   return (
@@ -11,7 +10,10 @@ const HomePage = () => {
         <div className="grid grid-cols-1 xl:grid-cols-2 gap-5 mx-5">
           <div className="min-w-[500px] shadow-xl rounded-xl">
             <div className="flex justify-between pt-2 px-2">
-              <p className="">Appointment Statistics</p>
+              <div className="flex items-center gap-3 text-2xl font-medium">
+                {" "}
+                <img src={statIcon} alt="" /> Appointment Statistics
+              </div>
               <div className="flex flex-col gap-3">
                 <div className="border-borderColor rounded-lg px-3 py-2 border-[1px]">
                   This Week
@@ -45,14 +47,25 @@ const HomePage = () => {
                 </div>
               </div>
             </div>
-            {/* <ChartBarGraph /> */}
             <div className="h-auto">
               <BarCharts />
             </div>
           </div>
-          <div className="h-[400px] shadow-xl rounded-xl">
-            <div className="mt-[-50px]"></div>
-            <PieCharts />
+          <div className="h-[400px] shadow-xl rounded-xl pt-2 px-2 ">
+            <div className="flex justify-between">
+              <div className="flex items-center gap-3 text-2xl font-medium">
+                {" "}
+                <img src={statIcon} alt="" /> Appointment Statistics
+              </div>
+              <div className="flex flex-col gap-3">
+                <div className="border-borderColor rounded-lg px-3 py-2 border-[1px]">
+                  This Week
+                </div>
+              </div>
+            </div>
+            <div className="mt-[-100px] flex justify-center">
+              <PieCharts />
+            </div>
           </div>
         </div>
 

@@ -17,6 +17,7 @@ import customerWhiteIcon from "./sidebar/customerWhiteIcon.svg";
 import c4carLogo from "./sidebar/c4car.svg";
 import deleteIcon from "./sidebar/deleteIcon.svg";
 import editIcon from "./sidebar/editIcon.svg";
+import statIcon from "./home/statIcon.svg";
 
 export {
   homeRedIcon,
@@ -38,4 +39,5 @@ export {
   c4carLogo,
   deleteIcon,
   editIcon,
+  statIcon,
 };
