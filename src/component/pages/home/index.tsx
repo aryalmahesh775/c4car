@@ -1,12 +1,12 @@
-import React from "react";
 import BarCharts from "./graph/chart/BarChart";
 import PieCharts from "./graph/chart/PieChart";
 import { statIcon } from "../../../assets";
+import HomeTable from "./table/homeTable";
 
 const HomePage = () => {
   return (
     <div>
-      <div className="">
+      <div className="overflow-y-auto h-[87vh]">
         <div className="grid grid-cols-1 xl:grid-cols-2 gap-5 mx-5">
           <div className="min-w-[500px] shadow-xl rounded-xl">
             <div className="flex justify-between pt-2 px-2">
@@ -69,10 +69,17 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div className="">
-          <div className="">
-            <p className="">Services</p>
-            <p className="">Orders</p>
+        <div className="mx-5 mt-5">
+          <div className="flex gap-4">
+            <p className="px-3 py-1 bg-redBackground text-white border-borderColor border-[1px] min-w-[100px] flex justify-center items-center rounded-md">
+              Services
+            </p>
+            <p className="px-3 py-1 bg-white text-primaryDark border-borderColor border-[1px] min-w-[100px] flex justify-center items-center rounded-md">
+              orders
+            </p>
+          </div>
+          <div className="w-full py-3">
+            <HomeTable />
           </div>
         </div>
       </div>

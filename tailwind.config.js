@@ -11,7 +11,7 @@ module.exports = {
         textPrimary: "#99000000",
         textPrimaryDark: "#252525",
         textSecondary: "#c8c8c8",
-        borderColor: "#D6E4E5",
+        borderColor: "#252525",
         bgPrimary: "#FAF5F0",
         bgSecondary: "#CFDDBB",
         bgGreen: "#D6E4E5",
