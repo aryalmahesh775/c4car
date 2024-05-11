@@ -6,6 +6,7 @@ import {
   getCoreRowModel,
   useReactTable,
 } from "@tanstack/react-table";
+import ToggleButton from "../../../utils/buttons/toggleButton";
 
 type PeopleType = {
   id: number;
@@ -59,37 +60,20 @@ const HomeTable = () => {
     columnHelper.accessor("status", {
       header: () => "Status",
       cell: (info) => (
-        // <input
-        //   type="checkbox"
-        //   checked={info.row.original.status}
-        //   onChange={() => handleSwitch(info.row.original.id)}
-        //   //   onChange={() => console.log(info.row.original)}
-        // />
-
         <>
-          <label className="inline-flex items-center cursor-pointer">
-            <input
-              type="checkbox"
-              onChange={() => handleSwitch(info.row.original.id)}
-              checked={info.row.original.status}
-              value=""
-              className="sr-only peer focus:outline-none"
-            ></input>
-            <div className="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
-            <span className="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300">
-              Toggle me
-            </span>
-          </label>
+          <ToggleButton
+            onClick={() => {
+              handleSwitchStatus(info.row.original);
+            }}
+            checked={info.row.original.status}
+          />
         </>
       ),
     }),
   ];
 
-  const handleSwitch = (id: number) => {
-    const updatedData = data.map((person) =>
-      person.id === id ? { ...person, isActive: !person.status } : person
-    );
-    setData(updatedData);
+  const handleSwitchStatus = (info) => {
+    console.log("mahesh you changed toggel data", info);
   };
 
   const table = useReactTable({

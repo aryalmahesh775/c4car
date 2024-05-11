@@ -2,20 +2,20 @@ import React, { useState } from "react";
 import PrimaryButton from "../../utils/buttons/primaryButton";
 import UsedCarCard from "../../utils/card/usedCars/usedCarCard";
 import { Dialog } from "@headlessui/react";
-import { cardData as data } from "../../data";
+import { cardData } from "../../data";
 
 const UsedCarsPage = () => {
   const [addCar, setAddCar] = useState<boolean>(false);
 
   return (
-    <div className="h-[100%] overflow-y-auto">
-      <div className="flex px-5 py-2 justify-between items-center border-b-[2px] border-borderColor">
+    <div className="h-[calc(100vh-120px)] overflow-y-auto">
+      <div className="flex px-5 py-2 h-[80px] justify-between items-center border-b-[2px] border-borderColor">
         <p className="text-black text-2xl">All Cars</p>
         <PrimaryButton onClick={() => setAddCar(true)} title={"Add car"} />
       </div>
-      <div className="flex px-5">
-        <div className="my-5 grid grid-cols-4 gap-10">
-          {data.map((item, index) => {
+      <div className="flex p-5 w-full">
+        <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 w-full gap-10">
+          {cardData.map((item, index) => {
             return (
               <div className="">
                 <UsedCarCard item={item} />

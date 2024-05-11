@@ -5,6 +5,7 @@ interface SecondaryButtonInterface {
   onClick: any;
   beforeIcon?: any;
   textColor: string;
+  width?: string;
 }
 
 const SecondaryButton = ({
@@ -13,16 +14,22 @@ const SecondaryButton = ({
   onClick,
   beforeIcon,
   textColor,
+  width,
 }: SecondaryButtonInterface) => {
   return (
     <div>
       <button
         onClick={onClick}
-        className={`border-gray-500 border-[1px]  flex justify-center items-center rounded-md bg-textPrimary bg-${bgColor} h-[36px] w-[130px]  text-${textColor}`}
+        className={`border-gray-500 border-[1px]  flex justify-center items-center rounded-md bg-[${bgColor}] h-[30px] xl:h-[36px] ${
+          width ? `w-[${width}]` : "w-[100px] xl:w-[100px] "
+        }  text-${textColor}`}
+        // className={`border-gray-500 border-[1px]  flex justify-center items-center rounded-md bg-[${bgColor}] h-[30px] xl:h-[36px] w-[100px] xl:w-[130px]  text-${textColor}`}
       >
         <div className="flex gap-2 items-center ">
           <img src={beforeIcon} alt="" />
-          <p className="text-lg font-medium">{title}</p>
+          <p className="text-base flex items-center xl:text-lg font-medium">
+            {title}
+          </p>
         </div>
       </button>
     </div>

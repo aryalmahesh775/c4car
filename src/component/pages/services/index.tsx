@@ -1,21 +1,18 @@
 import React, { useState } from "react";
-import Table from "../../data/test/table";
 import PrimaryButton from "../../utils/buttons/primaryButton";
 import { Dialog } from "@headlessui/react";
 import ServiceTable from "./table";
-import ToggleButton from "../../utils/buttons/toggleButton";
 
 const ServicePage = () => {
   const [addServices, setAddServices] = useState<boolean>(false);
   return (
-    <div className="h-[100%] overflow-y-auto">
-      <div className="flex px-5 py-2 justify-between items-center border-b-[2px] border-borderColor">
+    <div className="h-[calc(100vh-120px)] overflow-y-auto">
+      <div className="flex px-5 h-[80px] w-full py-2 justify-between items-center border-b-[2px] border-borderColor">
         <p className="text-black text-2xl">All Cars</p>
         <PrimaryButton onClick={() => setAddServices(true)} title={"Add car"} />
       </div>
       <div className="flex px-5">
-        <div className="my-10">{/* <ToggleButton /> */}</div>
-        <div className="w-full my-2">
+        <div className="w-full my-2 overflow-y-auto">
           <ServiceTable />
         </div>
       </div>

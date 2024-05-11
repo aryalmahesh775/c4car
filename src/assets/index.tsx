@@ -18,6 +18,11 @@ import c4carLogo from "./sidebar/c4car.svg";
 import deleteIcon from "./sidebar/deleteIcon.svg";
 import editIcon from "./sidebar/editIcon.svg";
 import statIcon from "./home/statIcon.svg";
+import alertIcon from "./sidebar/alertIcon.svg";
+import searchIcon from "./sidebar/searchIcon.svg";
+import carImage from "./utils/carImage.svg";
+import sparePartImage from "./utils/sparePartImage.svg";
+import offerImage from "./utils/offerImage.svg";
 
 export {
   homeRedIcon,
@@ -40,4 +45,9 @@ export {
   deleteIcon,
   editIcon,
   statIcon,
+  alertIcon,
+  searchIcon,
+  carImage,
+  sparePartImage,
+  offerImage,
 };

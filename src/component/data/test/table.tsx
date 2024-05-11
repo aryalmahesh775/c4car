@@ -18,7 +18,7 @@ type Person = {
   isActive?: boolean;
 };
 
-const defaultData: Person[] = [
+export const defaultData: Person[] = [
   {
     id: 1,
     firstName: "tanner",

@@ -8,10 +8,11 @@ const UsedCarCard = ({ item }) => {
 
   return (
     <div className="flex flex-col  rounded-[15px] shadow-md">
-      <div className="h-[310px]">
+      <div className="">
         <img
           src={item.image}
-          className="h-full bg-cover rounded-[15px]"
+          // src={carImage}
+          className="h-full w-full bg-cover rounded-[15px]"
           alt=""
         />
       </div>
@@ -20,7 +21,7 @@ const UsedCarCard = ({ item }) => {
           {item.name}
         </p>
       </div>
-      <div className="my-3 px-4 grid grid-cols-2 gap-10">
+      <div className="flex justify-between my-2 pb-5 px-2 gap-2 xl:px-5">
         <SecondaryButton
           title={"Edit"}
           onClick={() => {
@@ -28,7 +29,7 @@ const UsedCarCard = ({ item }) => {
             setOpenModal(true);
           }}
           textColor={"white"}
-          bgColor={"redBackground"}
+          bgColor={"#990000"}
           beforeIcon={editIcon}
         />
         <SecondaryButton
