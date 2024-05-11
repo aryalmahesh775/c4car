@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import SecondaryButton from "../utils/buttons/secondaryButton";
 import { alertIcon, searchIcon } from "../../assets";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [searchInput, setSearchInput] = useState("");
@@ -12,15 +13,24 @@ const Navbar = () => {
   return (
     <div className="bg-primary py-5">
       <div className="flex justify-end gap-10 items-center">
-        <SecondaryButton
-          title={"Order Details"}
-          onClick={() => {
-            console.log("Order Details button clicked");
-          }}
-          width={"200px"}
-          textColor={"black"}
-          bgColor={"#ccc"}
-        />
+        <NavLink
+          className={"rounded-lg"}
+          to={"/orderHistory"}
+          style={({ isActive }) => ({
+            color: isActive ? "#990000" : "white",
+            backgroundColor: isActive ? "white" : "",
+          })}
+        >
+          <SecondaryButton
+            title={"Order Details"}
+            onClick={() => {
+              console.log("Order Details button clicked");
+            }}
+            width={"200px"}
+            textColor={"black"}
+            bgColor={"#ccc"}
+          />
+        </NavLink>
         <div className="relative flex items-center">
           <input
             onChange={(e) => setSearchInput(e.target.value)}

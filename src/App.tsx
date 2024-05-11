@@ -12,6 +12,7 @@ import {
   SparePartPage,
   UsedCarsPage,
 } from "./component/pages";
+import OrderHistoryPage from "./component/pages/order";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
             <Route path="/offers" element={<OfferPage />} />
             <Route path="/reminders" element={<ReminderPage />} />
             <Route path="/customers" element={<CustomersPage />} />
+            <Route path="/orderHistory" element={<OrderHistoryPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Route>
         </Routes>
