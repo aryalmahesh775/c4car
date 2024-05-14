@@ -6,7 +6,6 @@ import {
   getCoreRowModel,
   useReactTable,
 } from "@tanstack/react-table";
-import ToggleButton from "../../../utils/buttons/toggleButton";
 import { defaultData, CustomerDataType } from "../../../data/test/customerData";
 import { Dialog } from "@headlessui/react";
 
@@ -17,7 +16,6 @@ const CustomerTable = () => {
   const [viewImage, setViewImage] = useState<boolean>(false);
   const [viewHistory, setViewHistory] = useState<boolean>(false);
   const [selectedId, setSelectedId] = useState<number>();
-
   const columnHelper = createColumnHelper<CustomerDataType>();
 
   const columns = [

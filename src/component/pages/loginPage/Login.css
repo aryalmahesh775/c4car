@@ -1,0 +1,367 @@
+/* Base styles */
+.login-page {
+    position: relative;
+    display: grid;
+    height: 100vh; 
+    overflow: hidden; 
+  }
+ 
+  .banner_image {
+    position: absolute;
+    right: 0; /* Position the image to the extreme right */
+    top: 0; /* Align the top of the image with the top of the container */
+    height: 100%; /* Set the height of the image to full height of the container */
+    width: auto; /* Let the width adjust proportionally */
+    z-index: -1; /* Move the image behind other content */
+  }
+  .sportsCar {
+    position: absolute;
+    right: 0; /* Position the sports car to the extreme right */
+    top: 50%; /* Adjust as necessary */
+    transform: translate(0, -30%); /* Center the sports car vertically */
+    z-index: 1; /* Ensure the sports car is on top of the banner image */
+    width: 48%;
+  }
+
+  .login-form {
+    position: absolute;
+    left: 10%; /* Position the login form to the extreme left */
+    top: 50%; /* Adjust as necessary */
+    transform: translate(0, -50%); /* Center the login form vertically */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Add background color with transparency */
+    border-radius: 5px;
+    width: 30%;
+  }
+  .div_logo {
+    position: relative;
+    margin-bottom: 10%;
+  }
+
+  .logo {
+    width: 200px; /* Adjust the width as needed */
+    margin-top: -4vw; /* Adjust the margin-top to shift the logo upwards */
+    margin-bottom: 4vw;
+    position: relative;
+  }
+  .logo-text{
+    position: absolute;
+  top: 15%; /* Align the text image to the center vertically */
+  left: 50%; /* Align the text image to the center horizontally */
+  transform: translate(-50%, -50%); /* Center the text image */
+  width: 20%;
+  }
+  .form-group {
+    margin-bottom: 10px;
+    display: flex;
+    height: 30px;
+    border-style: none
+  }
+  
+  
+  .form-group-infoField {
+    padding: 6px 10px 8px 32px;
+    border: none;
+    background-color: rgba(224, 224, 224, 0.859);
+    border-radius: 5px;
+    position: relative;
+    left: 7%;
+    margin-bottom: 17px;
+    width: 80%;
+    height: 3.5vw;
+
+  }
+  
+  
+  .form-input {
+    width: 90%;
+    height: 3.5vw;
+    border: none;
+    position: relative;
+    left: 5%;
+    top: 2%;
+    justify-content: center;
+    align-content: center;
+    font-size: 24px;
+    background-color: #aaaaaa00;
+  }
+  
+ 
+  
+  .forgotPassword {
+    font-size: 1.35rem; /* Adjust font size */
+    margin-left: 17vw; /* Adjust margin left */
+    margin-bottom: 1.75vw;
+    margin-top: -0.75vw;
+    text-decoration: none;
+    color: #990000; /* Deep red color */
+    transition: transform 0.5s;
+    font-weight: 380;
+        
+  }
+  
+  .forgotPassword > a {
+    color: rgb(159, 3, 3);
+    text-decoration: none;
+  
+  }
+  
+  .form-input::placeholder {
+    font-family: Poppins;
+    color: #413e3e;
+    text-align: left;
+    font-size: 20px;
+  }
+  
+  .mailIconClass {
+    position: absolute;
+    bottom: 18px;
+    left: 18px;
+    color: #b7b1b1;
+  }
+  
+  .lockIconClass {
+    position: absolute;
+    bottom: 18px;
+    left: 18px;
+    size: 22px;
+    color: #b7b1b1;
+  }
+  
+  .lefthr {
+    width: 40%;
+    margin-left: -90px;
+    margin-top: 15px;
+  }
+  
+  .righthr {
+    width: 40%;
+    margin-top: -9px;
+    margin-right: -71px;
+  }
+  
+  .lowText {
+    font-family: Poppins;
+    color: #b7b1b1;
+    font-size: 9px;
+    display: flex;
+    justify-content: center;
+    margin-top: -17px;
+  }
+  
+  
+  .google,
+  .facebook,
+  .ios {
+    height: 43px;
+    width: 72px;
+    border: 0.5px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  
+  
+  .subtitle-section {
+    padding-left: 108px;
+    margin-top: 12px;
+    font-size: 20px;
+  }
+  
+  .subtitle-noaccount, .subtitle-register {
+    font-size: 24px;
+    
+  }
+  
+  .subtitle-noaccount{
+    color: #b7b1b1;
+    font-size: 20px;
+  }
+  
+  #subtitle-reg > a { 
+    text-decoration: none;
+    color: #EE5C03 !important;  
+    font-size: 13px;
+    padding-left: 5%;
+  } 
+  
+  .boxStyle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400;
+    /* bgcolor: background.paper; */
+    border: 0.5px none #000;
+    box-shadow: 24px;
+    padding : 4px;
+    border-radius: 40px;
+    width: 353px;
+    height: 454px;
+    padding-left: 92px;
+    padding-right: 72px;
+  }
+  
+  
+  
+  .bottom-part {
+    background-color: #e5e5e5;
+    height: 48vh;
+    position: relative;
+  }
+  .LogInLabelSize{
+      margin-bottom: 10px;
+      font-family: "Poppins", sans-serif;
+      font-size: 1.5vw;
+      letter-spacing: 4.3px;
+      text-transform: uppercase;
+      color: #000000;
+      font-weight: 600;
+  }
+  
+  .form_part {
+    position: relative; /* Change position to relative */
+    width: 80%; /* Adjust width for smaller screens */
+    max-width: 500px; /* Limit maximum width */
+    margin: 5% auto; /* Center horizontally and adjust margin top */
+    box-shadow: 1px 1px 10px black; /* Add box shadow */
+    background: #ffffff;
+    border-radius: 2rem; /* Adjust border radius */
+    padding: 2rem; /* Adjust padding */
+  }
+  
+  .username {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem; /* Adjust margin top */
+    max-width: 80%;
+    justify-content: center !important;
+  }
+  
+  
+  .username input {
+    width: 100% !important; /* Make input full width */
+    margin-top: 1rem; /* Adjust margin top */
+    padding: 0.5rem; /* Adjust padding */
+    margin-left: 5% !important;
+    
+  }
+  
+  
+  .username label {
+    margin-right: 30rem !important; /* Adjust margin right */
+    font-family: "Poppins", sans-serif;
+    margin-bottom: -1px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1vw !important;
+    line-height: 24px;
+    color: #000000;
+    margin-left: 5% !important;
+  }
+  
+  .login {
+    width: 88%; 
+    height: 3.5vw;
+    position: relative;
+    left: 3%;
+    margin-top: 2rem; 
+    margin-right: 1.3rem;
+    background: #990000;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 30px;
+    border: none;
+  }
+  
+  .ForGotPasswordLabel {
+    margin-top: 1rem; /* Adjust margin top */
+  }
+ 
+  
+  
+  input:focus {
+    outline: none;
+  }
+  
+  input::placeholder {
+    font-size: 0.8rem; /* Adjust placeholder font size */
+  }
+  
+  .login-page-none {
+    background-color: black;
+  }
+  
+  .username-input {
+    text-indent: 0.5rem; /* Adjust text indent */
+  }
+  
+  
+  /* Media query for laptop */
+  @media only screen and (max-width: 768px)  {
+    .banner_image{
+        width: 490px;
+        height: 98%;
+    }
+    .sportsCar{
+        top: 65%; 
+        transform: translate(0, -30%);
+        width: 70%;
+    }
+    .form_part {
+      width: 80%; /* Adjust width */
+      max-width: 500px; /* Limit maximum width */
+      margin: 5% auto; /* Center horizontally and adjust margin top */
+      padding: 4%; /* Adjust padding */
+    }
+  
+    .LogInLabelSize {
+      font-size: 2.5vw; /* Adjust font size */
+    }
+  
+    .forgotPassword {
+      font-size: 1vw; /* Adjust font size */
+      margin-left: 1rem; /* Adjust margin left */
+    }
+  
+   
+    .username label {
+      margin-right: 2rem; /* Adjust margin right */
+      font-size: 1.4vw; /* Adjust font size */
+    }
+  }
+  
+  /* Shake animation */
+  .wrong-input-animation {
+    border: 1px solid red;
+    transition: 0.1s ease-in-out all;
+    animation: shakeAnimation 1.5s ease-in-out;
+  }
+  
+  @keyframes shakeAnimation {
+    0% {
+      transform: translateX(0px);
+      border: 1px solid red;
+    }
+    20% {
+      transform: translateX(20px);
+      border: 1px solid red;
+    }
+    50% {
+      transform: translateX(-20px);
+      border: 1px solid red;
+    }
+    75% {
+      transform: translateX(20px);
+      border: 1px solid red;
+    }
+    100% {
+      transform: translateX(0px);
+      border: 1px solid red;
+    }
+  }
+  

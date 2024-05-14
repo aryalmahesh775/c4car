@@ -18,7 +18,7 @@ const Navbar = () => {
           to={"/orderHistory"}
           style={({ isActive }) => ({
             color: isActive ? "#990000" : "white",
-            backgroundColor: isActive ? "white" : "",
+            backgroundColor: isActive ? "white" : "#252525",
           })}
         >
           <SecondaryButton
@@ -28,7 +28,7 @@ const Navbar = () => {
             }}
             width={"200px"}
             textColor={"black"}
-            bgColor={"#ccc"}
+            bgColor={"#252525"}
           />
         </NavLink>
         <div className="relative flex items-center">

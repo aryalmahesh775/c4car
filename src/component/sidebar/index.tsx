@@ -72,7 +72,7 @@ const sidebarList = [
 ];
 
 const Sidebar = () => {
-  const [openSidebar, setOpenSidebar] = useState<boolean>(false);
+  const [openSidebar, setOpenSidebar] = useState<boolean>(true);
 
   return (
     <div className="py-5 pl-2">
@@ -80,10 +80,10 @@ const Sidebar = () => {
         <div className="min-h-[80px]">
           <div
             onClick={() => setOpenSidebar(!openSidebar)}
-            className="text-white cursor-pointer shadow-2xl  duration-500   rounded-full bg-red-900 h-[20px] w-[20px] absolute top-1 right-[-10px]"
+            className="text-white cursor-pointer shadow-2xl  duration-500   rounded-full bg-red-900 h-[20px] w-[20px] absolute top-20 right-[-10px]"
           >
             {" "}
-            <div className="flex justify-center items-center bg-white text-black font-extrabold shadow-2xl border-black border-[2px] rounded-full duration-500">
+            <div className="flex justify-center items-center bg-white text-black font-extrabold shadow-2xl border-black border-[2px] rounded-full  duration-500">
               {openSidebar ? "<" : ">"}
             </div>
           </div>

@@ -23,6 +23,9 @@ import searchIcon from "./sidebar/searchIcon.svg";
 import carImage from "./utils/carImage.svg";
 import sparePartImage from "./utils/sparePartImage.svg";
 import offerImage from "./utils/offerImage.svg";
+import orderOptionImage from "./utils/orderOptionImage.svg";
+import successIcon from "./utils/successIcon.svg";
+import cancelIcon from "./utils/CancelIcon.svg";
 
 export {
   homeRedIcon,
@@ -50,4 +53,7 @@ export {
   carImage,
   sparePartImage,
   offerImage,
+  orderOptionImage,
+  successIcon,
+  cancelIcon,
 };
