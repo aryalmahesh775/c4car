@@ -28,7 +28,7 @@ const Navbar = () => {
             }}
             width={"200px"}
             textColor={"black"}
-            bgColor={"#252525"}
+            bgColor={"#ccc"}
           />
         </NavLink>
         <div className="relative flex items-center">

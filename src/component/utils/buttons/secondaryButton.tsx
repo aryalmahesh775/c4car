@@ -20,6 +20,9 @@ const SecondaryButton = ({
     <div>
       <button
         onClick={onClick}
+        style={{
+          backgroundColor: bgColor,
+        }}
         className={`border-gray-500 border-[1px]  flex justify-center items-center rounded-md bg-[${bgColor}] h-[30px] xl:h-[36px] ${
           width ? `w-[${width}]` : "w-[100px] xl:w-[100px] "
         }  text-${textColor}`}
