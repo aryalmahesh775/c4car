@@ -8,7 +8,7 @@ const HomePage = () => {
     <div>
       <div className="overflow-y-auto h-[calc(100vh-120px)]">
         <div className="grid grid-cols-1 xl:grid-cols-2 gap-5 mx-5">
-          <div className="min-w-[500px] shadow-xl rounded-xl">
+          <div className="min-w-[500px] shadow-xl rounded-xl flex flex-col">
             <div className="flex justify-between pt-2 px-2">
               <div className="flex items-center gap-3 text-2xl font-medium">
                 {" "}
@@ -47,7 +47,7 @@ const HomePage = () => {
                 </div>
               </div>
             </div>
-            <div className="h-auto">
+            <div className="h-auto bg-red-100 justify-end">
               <BarCharts />
             </div>
           </div>

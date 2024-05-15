@@ -21,6 +21,7 @@ module.exports = {
         gold: "#DD9711",
         halfBlack: "#888888",
         buttonBgGreen: "rgba(207, 221, 187, 1)",
+        inputBackgroundColor: "#D9D9D9",
       },
       boxShadow: {
         primary: "0px 8px 8px 2px rgba(244, 240, 236, 0.08)",

@@ -26,6 +26,8 @@ import offerImage from "./utils/offerImage.svg";
 import orderOptionImage from "./utils/orderOptionImage.svg";
 import successIcon from "./utils/successIcon.svg";
 import cancelIcon from "./utils/CancelIcon.svg";
+import serviceIcon from "./utils/serviceIcon.svg";
+import priceIcon from "./utils/priceIcon.svg";
 
 export {
   homeRedIcon,
@@ -56,4 +58,6 @@ export {
   orderOptionImage,
   successIcon,
   cancelIcon,
+  serviceIcon,
+  priceIcon,
 };
