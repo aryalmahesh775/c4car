@@ -64,7 +64,7 @@ function App() {
                 <Route path="/sparePart" element={<SparePartPage />} />
                 <Route path="/chat" element={<ChatPage />} />
                 <Route path="/offers" element={<OfferPage />} />
-                <Route path="/reminders" element={<ReminderPage />} />
+                <Route path="/reminder" element={<ReminderPage />} />
                 <Route path="/customers" element={<CustomersPage />} />
                 <Route path="/orderHistory" element={<OrderHistoryPage />} />
                 <Route path="*" element={<NotFoundPage />} />

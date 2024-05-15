@@ -46,3 +46,8 @@ tfoot {
 tfoot th {
   font-weight: normal;
 }
+
+/* radio button color */
+.specifyColorRadioButton {
+  accent-color: #990000;
+}

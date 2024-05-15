@@ -19,6 +19,7 @@ import {
   customerWhiteIcon,
   c4carLogo,
 } from "../../assets";
+import { c4carLogoImage } from "../../assets";
 
 const sidebarList = [
   {
@@ -89,10 +90,12 @@ const Sidebar = () => {
           </div>
           <div className="text-3xl">
             {openSidebar ? (
-              <img src={c4carLogo} alt="" />
+              <div className="">
+                <img className="w-[80%] h-[80%]" src={c4carLogoImage} alt="" />
+              </div>
             ) : (
               <div className="w-[70px] h-[70px] flex justify-center items-center">
-                <img src={c4carLogo} alt="" />
+                <img className="" src={c4carLogo} alt="" />
               </div>
             )}
           </div>

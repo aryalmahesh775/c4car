@@ -28,6 +28,7 @@ import successIcon from "./utils/successIcon.svg";
 import cancelIcon from "./utils/CancelIcon.svg";
 import serviceIcon from "./utils/serviceIcon.svg";
 import priceIcon from "./utils/priceIcon.svg";
+import c4carLogoImage from "./sidebar/c4carLogo.svg";
 
 export {
   homeRedIcon,
@@ -60,4 +61,5 @@ export {
   cancelIcon,
   serviceIcon,
   priceIcon,
+  c4carLogoImage,
 };

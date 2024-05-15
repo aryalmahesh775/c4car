@@ -47,7 +47,7 @@ const HomePage = () => {
                 </div>
               </div>
             </div>
-            <div className="h-auto bg-red-100 justify-end">
+            <div className="h-full justify-end">
               <BarCharts />
             </div>
           </div>

@@ -1,14 +1,29 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import SecondaryButton from "../utils/buttons/secondaryButton";
 import { alertIcon, searchIcon } from "../../assets";
 import { NavLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [searchInput, setSearchInput] = useState("");
+  const [showProfileMenu, setShowProfileMenu] = useState(false);
+
+  const navigate = useNavigate();
 
   const handleSearch = () => {
     console.log("handle search", searchInput);
   };
+
+  const ref = useRef(null);
+
+  const handleClickOutside = (event: Event) => {
+    // @ts-ignore
+    if (ref.current && !ref.current.contains(event.target)) {
+      setShowProfileMenu(false);
+    }
+  };
+
+  document.addEventListener("click", handleClickOutside, true);
 
   return (
     <div className="bg-primary py-5">
@@ -54,12 +69,37 @@ const Navbar = () => {
           </p>
           <div className="h-[30px] w-[30px] xl:h-[50px] xl:w-[50px] overflow-hidden rounded-full">
             <img
-              className="h-full w-full bg-cover"
+              className="h-full w-full bg-cover cursor-pointer"
               src="https://i.pinimg.com/280x280_RS/54/ff/7a/54ff7a5fab4de5e729aa065e32e1ce64.jpg"
               alt=""
+              onClick={() => {
+                setShowProfileMenu(true);
+              }}
             />
           </div>
         </div>
+
+        {showProfileMenu && (
+          <>
+            <div
+              ref={ref}
+              className="w-[250px] z-[50] bg-gray-100 cursor-pointer shadow-2xl absolute py-2 rounded-xl top-[90px]"
+            >
+              <div className="border-b-[1px] border-[#ccc] text-xl py-1 px-2 font-medium cursor-pointer">
+                View Profile
+              </div>
+              <div
+                onClick={() => {
+                  localStorage.removeItem("c4CarLoginStatus");
+                  window.location.reload();
+                }}
+                className="cursor-pointer py-1 px-2 text-xl font-medium"
+              >
+                Logout
+              </div>
+            </div>
+          </>
+        )}
       </div>
     </div>
   );

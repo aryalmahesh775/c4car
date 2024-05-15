@@ -1,10 +1,9 @@
 import { Dialog } from "@headlessui/react";
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import PrimaryButton from "../../utils/buttons/primaryButton";
 import UsedCarCard from "../../utils/card/usedCars/usedCarCard";
 import { sparePartData } from "../../data";
 import ImageUploadButton from "../../utils/buttons/imageUploadButton";
-import { Formik } from "formik";
 import InputField from "../../form/input";
 
 const SparePartPage = () => {
