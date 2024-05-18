@@ -79,7 +79,7 @@ const Sidebar = () => {
     <div className="py-5 pl-2">
       <div className="text-white flex flex-col gap-10 relative">
         <div className="min-h-[80px]">
-          <div
+          {/* <div
             onClick={() => setOpenSidebar(!openSidebar)}
             className="text-white cursor-pointer shadow-2xl  duration-500   rounded-full bg-red-900 h-[20px] w-[20px] absolute top-20 right-[-10px]"
           >
@@ -87,7 +87,7 @@ const Sidebar = () => {
             <div className="flex justify-center items-center bg-white text-black font-extrabold shadow-2xl border-black border-[2px] rounded-full  duration-500">
               {openSidebar ? "<" : ">"}
             </div>
-          </div>
+          </div> */}
           <div className="text-3xl">
             {openSidebar ? (
               <div className="">
@@ -108,7 +108,7 @@ const Sidebar = () => {
                   key={index}
                   className={`pl-[15px] ${
                     openSidebar ? "min-w-[200px]" : "min-w-[70px]"
-                  }  lg:pl-[20px] relative pr-[1px] py-3 rounded-l-full font-bold flex items-center text-[12px] xl:text-[14px]`}
+                  }  lg:pl-[20px] relative pr-[1px] py-5 rounded-l-full font-bold flex items-center text-[12px] xl:text-[14px]`}
                   to={item.path}
                   style={({ isActive }) => ({
                     color: isActive ? "#990000" : "white",
@@ -132,7 +132,7 @@ const Sidebar = () => {
 
                       {isActive && (
                         <div>
-                          <div className="h-[60px] w-[20px] absolute top-[-7px] rounded-l-3xl bg-white right-0"></div>
+                          <div className="h-[70px] w-[25px] absolute top-[-7px] rounded-l-3xl bg-white right-0"></div>
                         </div>
                       )}
                     </div>

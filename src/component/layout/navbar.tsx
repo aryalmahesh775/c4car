@@ -49,8 +49,9 @@ const Navbar = () => {
         <div className="relative flex items-center">
           <input
             onChange={(e) => setSearchInput(e.target.value)}
+            placeholder="Search"
             type="text"
-            className="py-3 pl-2 focus:outline-none text-white pr-[50px] bg-gray-700 border-white border-[1px] w-[200px] rounded-2xl"
+            className="py-3 pl-2 focus:outline-none text-white text-lg placeholder:text-lg placeholder:text-white pr-[50px] bg-gray-700 border-white border-[1px] w-[200px] rounded-2xl"
           />
           <div onClick={handleSearch} className="absolute right-[10px]">
             <img className="" src={searchIcon} alt="" />

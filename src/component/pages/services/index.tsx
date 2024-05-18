@@ -29,8 +29,8 @@ const ServicePage = () => {
         onClose={() => setAddServices(false)}
         className="relative z-50"
       >
-        <div className=" fixed inset-0 bg-black/30 flex w-screen items-center justify-center p-4">
-          <Dialog.Panel className="w-full max-w-sm rounded">
+        <div className="fixed inset-0 bg-black/30 flex w-screen items-center justify-center p-4">
+          <Dialog.Panel className="w-full flex justify-center rounded">
             <div className="h-auto w-[500px] xl:w-[700px] relative rounded-3xl bg-white px-5 py-6">
               <div className="">
                 <div

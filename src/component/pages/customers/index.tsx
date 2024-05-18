@@ -18,21 +18,19 @@ const CustomersPage = () => {
         className="relative z-50"
       >
         <div className=" fixed inset-0 bg-black/30 flex w-screen items-center justify-center p-4">
-          <Dialog.Panel className="w-full max-w-sm rounded">
-            <div className="h-[700px] w-[700px] relative bg-white">
-              <div className="border-borderColor border-b-[1px] pb-5">
-                <div
-                  onClick={() => {
-                    setOpenModal(false);
-                  }}
-                  className="absolute h-[20px] w-[20px] bg-redBackground text-white flex justify-center items-center right-1 top-1 rounded-full cursor-pointer"
-                >
-                  x
-                </div>
-                <div className="text-lg pt-2 px-3">Add Car</div>
+          <div className="h-[700px] w-[700px] relative bg-white">
+            <div className="border-borderColor border-b-[1px] pb-5">
+              <div
+                onClick={() => {
+                  setOpenModal(false);
+                }}
+                className="absolute h-[20px] w-[20px] bg-redBackground text-white flex justify-center items-center right-1 top-1 rounded-full cursor-pointer"
+              >
+                x
               </div>
+              <div className="text-lg pt-2 px-3">Add Car</div>
             </div>
-          </Dialog.Panel>
+          </div>
         </div>
       </Dialog>
     </div>

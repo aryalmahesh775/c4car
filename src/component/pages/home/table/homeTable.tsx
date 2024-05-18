@@ -60,14 +60,20 @@ const HomeTable = () => {
     columnHelper.accessor("status", {
       header: () => "Status",
       cell: (info) => (
-        <>
+        <div className="flex gap-3">
           <ToggleButton
             onClick={() => {
               handleSwitchStatus(info.row.original);
             }}
             checked={info.row.original.status}
           />
-        </>
+          <ToggleButton
+            onClick={() => {
+              handleSwitchStatus(info.row.original);
+            }}
+            checked={info.row.original.status}
+          />
+        </div>
       ),
     }),
   ];

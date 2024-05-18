@@ -53,37 +53,35 @@ const CustomerTable = () => {
             className="relative z-50"
           >
             <div className=" fixed inset-0 bg-black/30 flex w-screen items-center justify-center ">
-              <Dialog.Panel className="w-full max-w-sm rounded">
-                <div className=" relative bg-white w-[500px]">
-                  <div className="">
-                    <div
-                      onClick={() => {
-                        setViewHistory(false);
-                      }}
-                      className="absolute h-[20px] w-[20px] bg-redBackground text-white flex justify-center items-center right-1 top-1 rounded-full cursor-pointer"
-                    >
-                      x
-                    </div>
-                    <div className="text-lg">
-                      <p className="py-4 text-xl font-bold  border-borderColor border-b-[1px] px-2">
-                        View History
-                      </p>
-                      <p className="font-semibold px-2 py-5">
-                        Name:{" "}
-                        <span className="font-medium pl-1">
-                          {info.row.original.history.name}
-                        </span>
-                      </p>
-                      <p className="font-semibold px-2 py-5">
-                        Description:{" "}
-                        <span className="font-medium pl-1">
-                          {info.row.original.history.desc}
-                        </span>
-                      </p>
-                    </div>
+              <div className=" relative bg-white w-[500px]">
+                <div className="">
+                  <div
+                    onClick={() => {
+                      setViewHistory(false);
+                    }}
+                    className="absolute h-[20px] w-[20px] bg-redBackground text-white flex justify-center items-center right-1 top-1 rounded-full cursor-pointer"
+                  >
+                    x
+                  </div>
+                  <div className="text-lg">
+                    <p className="py-4 text-xl font-bold  border-borderColor border-b-[1px] px-2">
+                      View History
+                    </p>
+                    <p className="font-semibold px-2 py-5">
+                      Name:{" "}
+                      <span className="font-medium pl-1">
+                        {info.row.original.history.name}
+                      </span>
+                    </p>
+                    <p className="font-semibold px-2 py-5">
+                      Description:{" "}
+                      <span className="font-medium pl-1">
+                        {info.row.original.history.desc}
+                      </span>
+                    </p>
                   </div>
                 </div>
-              </Dialog.Panel>
+              </div>
             </div>
           </Dialog>
         </div>
@@ -109,7 +107,7 @@ const CustomerTable = () => {
             className="relative z-50"
           >
             <div className=" fixed inset-0 bg-black/30 flex w-screen items-center justify-center ">
-              <Dialog.Panel className="w-full max-w-sm rounded">
+              <Dialog.Panel className="w-full flex justify-center items-center rounded">
                 <div className=" relative">
                   <div className="border-borderColor ">
                     <div className="text-lg">

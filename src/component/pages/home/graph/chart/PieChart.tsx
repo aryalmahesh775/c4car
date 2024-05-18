@@ -13,8 +13,8 @@ const PieCharts = () => {
           />
 
           <div className="absolute top-[250px] left-[110px] ">
-            <div className="p-5">345</div>
-            <div className="text-lg font-semibold block">orders</div>
+            <div className=" pl-7 font-semibold text-2xl">345</div>
+            <div className="text-lg pl-6 font-medium block">orders</div>
           </div>
         </div>
       </section>

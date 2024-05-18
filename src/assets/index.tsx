@@ -29,6 +29,7 @@ import cancelIcon from "./utils/CancelIcon.svg";
 import serviceIcon from "./utils/serviceIcon.svg";
 import priceIcon from "./utils/priceIcon.svg";
 import c4carLogoImage from "./sidebar/c4carLogo.svg";
+import calenderIcon from "./home/calenderIcon.svg";
 
 export {
   homeRedIcon,
@@ -62,4 +63,5 @@ export {
   serviceIcon,
   priceIcon,
   c4carLogoImage,
+  calenderIcon,
 };

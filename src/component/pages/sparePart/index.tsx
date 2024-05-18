@@ -52,7 +52,7 @@ const SparePartPage = () => {
           className="relative z-50"
         >
           <div className=" fixed inset-0 bg-black/30 flex w-screen items-center justify-center p-4">
-            <Dialog.Panel className="w-full max-w-sm rounded">
+            <Dialog.Panel className="w-full flex justify-center rounded">
               <div className="h-auto w-[700px] rounded-md relative bg-white">
                 <div className=" pb-5">
                   <div

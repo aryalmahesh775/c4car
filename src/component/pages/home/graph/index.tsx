@@ -102,7 +102,40 @@ export const BarChart = ({
     ],
   };
 
-  return <Bar height={80} width={""} options={options} data={data} />;
+  return (
+    <div className="h-[230px] w-full">
+      <Bar
+        options={{
+          maintainAspectRatio: false,
+          borderColor: "white",
+          plugins: {
+            legend: {
+              display: false,
+            },
+            title: {
+              display: false,
+            },
+          },
+
+          scales: {
+            y: {
+              beginAtZero: true,
+              grid: {
+                display: false,
+              },
+            },
+            x: {
+              grid: {
+                display: false,
+              },
+            },
+          },
+        }}
+        data={data}
+      />
+      ;{/* <Bar height={80} width={""} options={options} data={data} />; */}
+    </div>
+  );
 };
 
 interface DoughnutChartProps {
