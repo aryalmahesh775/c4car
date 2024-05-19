@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Vector from "./Vector.png";
 import sportCar from "./sportCar.png";
 import "./Login.css";
@@ -6,9 +6,12 @@ import profile from "./profile.png";
 import logo2 from "./logo2.png";
 import lock from "./lock.png";
 import { useNavigate } from "react-router-dom";
+import { Dialog } from "@headlessui/react";
+import PrimaryButton from "../../utils/buttons/primaryButton";
 
 const LoginPage = ({ setAuthUser }: any) => {
   const navigate = useNavigate();
+  const [forgetPassword, setForgetPassword] = useState<boolean>(false);
 
   const [formData, setFormData] = React.useState({
     email: "",
@@ -79,7 +82,12 @@ const LoginPage = ({ setAuthUser }: any) => {
             </div>
           </div>
           <div className="forgotPassword">
-            <span>Forget Password?</span>
+            <span
+              className="cursor-pointer "
+              onClick={() => setForgetPassword(true)}
+            >
+              Forget Password?
+            </span>
           </div>
           <div>
             <button
@@ -98,6 +106,63 @@ const LoginPage = ({ setAuthUser }: any) => {
           {/* </form> */}
         </div>
       </div>
+
+      <Dialog
+        open={forgetPassword}
+        onClose={() => setForgetPassword(false)}
+        className="relative z-50"
+      >
+        <div className=" fixed inset-0 bg-black/30 flex w-screen items-center justify-center p-4">
+          <Dialog.Panel className="w-full flex justify-center items-center rounded">
+            <div className="w-[600px] rounded-xl relative bg-white">
+              <div className="">
+                <div
+                  onClick={() => {
+                    setForgetPassword(false);
+                  }}
+                  className="absolute h-[20px] w-[20px] bg-redBackground text-white flex justify-center items-center right-1 top-1 rounded-full cursor-pointer"
+                >
+                  x
+                </div>
+                <div className="text-lg pt-2 px-3 ">
+                  <p className="text-[32px] font-medium flex justify-center py-5">
+                    Forget Password ?
+                  </p>
+                  <p className="font-normal text-xl flex justify-center text-center py-5">
+                    In publishing and graphic design, Lorem <br />
+                    is a placeholder text common
+                  </p>
+
+                  <div className="flex justify-center">
+                    <div className="form-group-infoField -ml-20">
+                      <span className="lockIconClass">
+                        <img src={lock} alt="" color="#B7B1B1" />
+                      </span>
+                      <input
+                        className="form-input "
+                        type={"number"}
+                        id="password"
+                        name="phone"
+                        value={formData.password}
+                        onChange={handleInputChange}
+                        required
+                        placeholder="Enter your PasswordP"
+                      />
+                    </div>
+                  </div>
+
+                  <div className="flex justify-center py-5">
+                    <PrimaryButton
+                      title={"Reset"}
+                      onClick={() => setForgetPassword(false)}
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Dialog.Panel>
+        </div>
+      </Dialog>
     </div>
   );
 };

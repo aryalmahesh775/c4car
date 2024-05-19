@@ -30,6 +30,8 @@ import serviceIcon from "./utils/serviceIcon.svg";
 import priceIcon from "./utils/priceIcon.svg";
 import c4carLogoImage from "./sidebar/c4carLogo.svg";
 import calenderIcon from "./home/calenderIcon.svg";
+import profileIcon from "./utils/userProfile.svg";
+import passwordIcon from "./utils/passwordIcon.svg";
 
 export {
   homeRedIcon,
@@ -64,4 +66,6 @@ export {
   priceIcon,
   c4carLogoImage,
   calenderIcon,
+  passwordIcon,
+  profileIcon,
 };

@@ -44,6 +44,7 @@ const ChatPage = () => {
             <ChatDetails />
             <ChatDetails />
             <ChatDetails />
+            <ChatDetails />
           </div>
         </div>
         <div className="col-span-3">

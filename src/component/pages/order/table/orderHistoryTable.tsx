@@ -111,7 +111,7 @@ const OrderHistoryTable = () => {
                 <tr key={headerGroup.id}>
                   {headerGroup.headers.map((header) => (
                     <th
-                      className="border-borderColor border-x-[1px]"
+                      className="border-borderColor bg-gray-100 border-x-[1px]"
                       key={header.id}
                     >
                       {header.isPlaceholder

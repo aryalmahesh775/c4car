@@ -9,7 +9,7 @@ const UsedCarsPage = () => {
 
   return (
     <div className="h-[calc(100vh-120px)] overflow-y-auto">
-      <div className="flex px-5 py-2 h-[80px] justify-between items-center border-b-[2px] border-borderColor">
+      <div className="flex px-5 py-2 h-[80px] justify-between items-center border-b-[2px] border-lightBorderColor">
         <p className="text-black text-2xl">All Cars</p>
         <PrimaryButton onClick={() => setAddCar(true)} title={"Add car"} />
       </div>

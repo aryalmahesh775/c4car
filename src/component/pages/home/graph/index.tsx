@@ -133,7 +133,7 @@ export const BarChart = ({
         }}
         data={data}
       />
-      ;{/* <Bar height={80} width={""} options={options} data={data} />; */}
+      {/* <Bar height={80} width={""} options={options} data={data} />; */}
     </div>
   );
 };
@@ -187,39 +187,3 @@ export const DoughnutChart = ({
     </div>
   );
 };
-
-// interface PieChartProps {
-//   labels: string[];
-//   data: number[];
-//   backgroundColor: string[];
-//   offset?: number[];
-// }
-// export const PieChart = ({
-//   labels,
-//   data,
-//   backgroundColor,
-//   offset,
-// }: PieChartProps) => {
-//   const pieChartData: ChartData<"pie", number[], string> = {
-//     labels,
-//     datasets: [
-//       {
-//         data,
-//         backgroundColor,
-//         borderWidth: 1,
-//         offset,
-//       },
-//     ],
-//   };
-
-//   const pieChartOptions: ChartOptions<"pie"> = {
-//     responsive: true,
-//     plugins: {
-//       legend: {
-//         display: false,
-//       },
-//     },
-//   };
-
-//   return <Pie height={"80"} data={pieChartData} options={pieChartOptions} />;
-// };

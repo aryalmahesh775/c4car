@@ -11,7 +11,7 @@ const ServicePage = () => {
 
   return (
     <div className="h-[calc(100vh-120px)] overflow-y-auto">
-      <div className="flex px-5 h-[80px] w-full py-2 justify-between items-center border-b-[2px] border-borderColor">
+      <div className="flex px-5 h-[80px] w-full py-2 justify-between items-center border-b-[2px] border-lightBorderColor">
         <p className="text-black text-2xl">All Services</p>
         <PrimaryButton
           onClick={() => setAddServices(true)}

@@ -101,7 +101,7 @@ const Sidebar = () => {
           </div>
         </div>
         <div className="">
-          <div className="flex flex-col gap-9">
+          <div className="flex flex-col gap-[12px] 2xl:gap-9">
             {sidebarList.map((item, index: number) => {
               return (
                 <NavLink

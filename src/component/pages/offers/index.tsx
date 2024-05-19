@@ -9,9 +9,12 @@ const OfferPage = () => {
   return (
     <div>
       <div className="h-[calc(100vh-120px)] overflow-y-auto rounded-t-lg">
-        <div className="flex px-5 py-2 h-[80px] justify-between items-center border-b-[2px] border-borderColor">
+        <div className="flex px-5 py-2 h-[80px] justify-between items-center border-b-[2px] border-lightBorderColor">
           <p className="text-black text-2xl">Offers</p>
-          <PrimaryButton onClick={() => setAddOffer(true)} title={"Add car"} />
+          <PrimaryButton
+            onClick={() => setAddOffer(true)}
+            title={"Add Offer"}
+          />
         </div>
         <div className="flex p-5 w-full">
           <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 w-full gap-10">
