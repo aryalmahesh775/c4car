@@ -14,6 +14,7 @@ import {
   Filler,
 } from "chart.js";
 import { Bar, Doughnut, Pie } from "react-chartjs-2";
+import Don from "./pie";
 
 ChartJS.register(
   CategoryScale,
@@ -86,18 +87,18 @@ export const BarChart = ({
         data: data_1,
         backgroundColor: bgColor_1,
         barThickness: "flex",
-        barPercentage: 1,
-        categoryPercentage: 0.4,
         borderRadius: 20,
+        barPercentage: 0.7, // Adjusted to create space between bars
+        categoryPercentage: 0.5, // adjust space between bar
       },
       {
         label: title_2,
         data: data_2,
         backgroundColor: bgColor_2,
         barThickness: "flex",
-        barPercentage: 1,
-        categoryPercentage: 0.4,
         borderRadius: 20,
+        barPercentage: 0.7, // Adjusted to create space between bars
+        categoryPercentage: 0.5, // adjust space between bar
       },
     ],
   };
@@ -107,6 +108,7 @@ export const BarChart = ({
       <Bar
         options={{
           maintainAspectRatio: false,
+
           borderColor: "white",
           plugins: {
             legend: {
@@ -145,6 +147,7 @@ interface DoughnutChartProps {
   cutout?: number | string;
   legends?: boolean;
   offset?: number[];
+  segmentSpacing?: number;
 }
 
 export const DoughnutChart = ({
@@ -161,14 +164,17 @@ export const DoughnutChart = ({
       {
         data,
         backgroundColor,
-        borderWidth: 0,
-        offset,
+        // borderWidth: 0,
+        // offset,
+        // borderRadius: 0,
       },
     ],
   };
 
   const doughnutOptions: ChartOptions<"doughnut"> = {
-    responsive: true,
+    // responsive: true,
+    // spacing: 0,
+
     plugins: {
       legend: {
         display: legends,
@@ -178,12 +184,12 @@ export const DoughnutChart = ({
         },
       },
     },
-    cutout,
+    // cutout,
   };
 
   return (
     <div className="h-[500px] w-[500px]">
-      <Doughnut width={""} data={doughnutData} options={doughnutOptions} />
+      <Doughnut data={doughnutData} options={doughnutOptions} />
     </div>
   );
 };

@@ -3,6 +3,7 @@ import PieCharts from "./graph/chart/PieChart";
 import { calenderIcon, statIcon } from "../../../assets";
 import HomeTable from "./table/homeTable";
 import { useState } from "react";
+import AcceptButton from "../../staticButtons/acceptButton";
 
 const HomePage = () => {
   const [activeTab, setActiveTab] = useState<number>(1);

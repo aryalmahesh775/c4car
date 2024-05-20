@@ -1,5 +1,6 @@
 import React from "react";
 import { orderOptionImage } from "../../../assets";
+import { IoSendSharp } from "react-icons/io5";
 
 const ChatDetails = () => {
   return (
@@ -28,7 +29,7 @@ const ChatPage = () => {
   return (
     <div className=" h-[calc(100vh-120px)] overflow-y-auto">
       <div className="grid grid-cols-5 ">
-        <div className="col-span-2">
+        <div className="col-span-2 pr-1">
           <div className="flex px-5 py-2 h-[80px] justify-between items-center border-b-[2px] border-borderColor">
             <p className="text-black text-2xl">icon</p>
             <img src={orderOptionImage} alt="" />
@@ -47,7 +48,7 @@ const ChatPage = () => {
             <ChatDetails />
           </div>
         </div>
-        <div className="col-span-3">
+        <div className="col-span-3 bg-gray-100 pl-1">
           <div className="flex px-5 py-2 h-[80px] justify-between items-center border-b-[2px] border-borderColor">
             <div className="text-black text-xl flex gap-6 items-center">
               <img
@@ -60,6 +61,19 @@ const ChatPage = () => {
               <p className="">Chat details</p>
             </div>
             <img src={orderOptionImage} alt="" />
+          </div>
+          <div className="relative h-full">
+            <div className="absolute bottom-5 w-full">
+              <div className="relative">
+                <input
+                  type="text"
+                  className="w-full py-5 px-3 text-xl border-lightBorderColor"
+                />
+                <p className="absolute right-2 top-4 text-blue-700">
+                  <IoSendSharp size={20} />
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -3,6 +3,7 @@ import PrimaryButton from "../../utils/buttons/primaryButton";
 import { Dialog } from "@headlessui/react";
 import ServiceTable from "./table";
 import { priceIcon, serviceIcon } from "../../../assets";
+import AcceptButton from "../../staticButtons/acceptButton";
 
 const ServicePage = () => {
   const [addServices, setAddServices] = useState<boolean>(false);

@@ -7,6 +7,8 @@ import {
   useReactTable,
 } from "@tanstack/react-table";
 import ToggleButton from "../../../utils/buttons/toggleButton";
+import AcceptButton from "../../../staticButtons/acceptButton";
+import RejectButton from "../../../staticButtons/rejectButton";
 
 type PeopleType = {
   id: number;
@@ -29,6 +31,7 @@ const HomeTable = () => {
       cell: (info) => info.getValue(),
     }),
     columnHelper.accessor((row) => row.name, {
+      header: () => "Name",
       id: "name",
       cell: (info) => <i>{info.getValue()}</i>,
     }),
@@ -61,18 +64,8 @@ const HomeTable = () => {
       header: () => "Status",
       cell: (info) => (
         <div className="flex gap-3 justify-center">
-          <ToggleButton
-            onClick={() => {
-              handleSwitchStatus(info.row.original);
-            }}
-            checked={info.row.original.status}
-          />
-          <ToggleButton
-            onClick={() => {
-              handleSwitchStatus(info.row.original);
-            }}
-            checked={info.row.original.status}
-          />
+          <AcceptButton />
+          <RejectButton />
         </div>
       ),
     }),
@@ -96,7 +89,7 @@ const HomeTable = () => {
             <tr key={headerGroup.id}>
               {headerGroup.headers.map((header) => (
                 <th
-                  className="border-borderColor font-light text-sm border-x-[1px] py-2 px-1"
+                  className="border-borderColor font-medium text-sm border-x-[1px] py-2 px-1"
                   key={header.id}
                 >
                   {header.isPlaceholder
