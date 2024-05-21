@@ -8,6 +8,7 @@ import lock from "./lock.png";
 import { useNavigate } from "react-router-dom";
 import { Dialog } from "@headlessui/react";
 import PrimaryButton from "../../utils/buttons/primaryButton";
+import { phoneIcon } from "../../../assets";
 
 const LoginPage = ({ setAuthUser }: any) => {
   const navigate = useNavigate();
@@ -114,7 +115,7 @@ const LoginPage = ({ setAuthUser }: any) => {
       >
         <div className=" fixed inset-0 bg-black/30 flex w-screen items-center justify-center p-4">
           <Dialog.Panel className="w-full flex justify-center items-center rounded">
-            <div className="w-[600px] rounded-xl relative bg-white">
+            <div className="w-[700px] rounded-xl relative bg-white">
               <div className="">
                 <div
                   onClick={() => {
@@ -133,26 +134,33 @@ const LoginPage = ({ setAuthUser }: any) => {
                     is a placeholder text common
                   </p>
 
-                  <div className="flex justify-center">
-                    <div className="form-group-infoField -ml-20">
-                      <span className="lockIconClass">
-                        <img src={lock} alt="" color="#B7B1B1" />
-                      </span>
-                      <input
-                        className="form-input "
-                        type={"number"}
-                        id="password"
-                        name="phone"
-                        value={formData.password}
-                        onChange={handleInputChange}
-                        required
-                        placeholder="Enter your PasswordP"
-                      />
+                  <div>
+                    <p className="ml-20 text-[21px] font-medium text-primaryDark py-1">
+                      Mobile Number
+                    </p>
+                    <div className="flex justify-center ">
+                      <div className="form-group-infoField -ml-20 items-center">
+                        <span className="lockIconClass">
+                          <img src={phoneIcon} alt="" color="#B7B1B1" />
+                        </span>
+                        <input
+                          className="form-input "
+                          type={"number"}
+                          id="phone"
+                          name="phone"
+                          // value={formData.password}
+                          // onChange={handleInputChange}
+                          // required
+                          placeholder="Enter your Number"
+                        />
+                      </div>
                     </div>
                   </div>
 
                   <div className="flex justify-center py-5">
                     <PrimaryButton
+                      width={"214px"}
+                      height={"52px"}
                       title={"Reset"}
                       onClick={() => setForgetPassword(false)}
                     />

@@ -32,6 +32,10 @@ import c4carLogoImage from "./sidebar/c4carLogo.svg";
 import calenderIcon from "./home/calenderIcon.svg";
 import profileIcon from "./utils/userProfile.svg";
 import passwordIcon from "./utils/passwordIcon.svg";
+import leftIcon from "./utils/leftIcon.svg";
+import rightIcon from "./utils/rightIcon.svg";
+import phoneIcon from "./utils/phoneIcon.svg";
+import group1956 from "./utils/Group1956.svg";
 
 export {
   homeRedIcon,
@@ -68,4 +72,8 @@ export {
   calenderIcon,
   passwordIcon,
   profileIcon,
+  leftIcon,
+  rightIcon,
+  phoneIcon,
+  group1956,
 };

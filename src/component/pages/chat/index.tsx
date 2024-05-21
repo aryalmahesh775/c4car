@@ -10,12 +10,12 @@ const ChatDetails = () => {
           <img
             className="h-[60px] w-[60px] rounded-full bg-cover"
             src={
-              "https://i.pinimg.com/280x280_RS/54/ff/7a/54ff7a5fab4de5e729aa065e32e1ce64.jpg"
+              "https://t3.ftcdn.net/jpg/05/53/79/60/360_F_553796090_XHrE6R9jwmBJUMo9HKl41hyHJ5gqt9oz.jpg"
             }
             alt=""
           />
           <div className="">
-            <p className="text-xl font-semibold">Mahesh Aryal</p>
+            <p className="text-xl font-semibold">User Aryal</p>
             <p className="text-lg font-medium">Chat details</p>
           </div>
         </div>
@@ -54,7 +54,7 @@ const ChatPage = () => {
               <img
                 className="h-[40px] w-[40px] rounded-full bg-cover"
                 src={
-                  "https://i.pinimg.com/280x280_RS/54/ff/7a/54ff7a5fab4de5e729aa065e32e1ce64.jpg"
+                  "https://t3.ftcdn.net/jpg/05/53/79/60/360_F_553796090_XHrE6R9jwmBJUMo9HKl41hyHJ5gqt9oz.jpg"
                 }
                 alt=""
               />

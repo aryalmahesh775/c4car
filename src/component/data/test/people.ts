@@ -1,7 +1,7 @@
 export const people = [
   {
     id: 1,
-    name: "Mahesh",
+    name: "user",
     email: "kritchard0@ucla.edu",
     contact: "+911 7897897",
     gender: "Female",
@@ -13,7 +13,7 @@ export const people = [
   {
     id: 2,
     name: "Aryal",
-    email: "mahesh0@ucla.edu",
+    email: "User0@ucla.edu",
     contact: "+911 7897897",
     gender: "Male",
     service: "Tyre/oil Change",
@@ -23,7 +23,7 @@ export const people = [
   },
   {
     id: 3,
-    name: "Tamghas",
+    name: "tt",
     email: "kritchard0@ucla.edu",
     contact: "+911 7897897",
     gender: "Female",
@@ -34,23 +34,12 @@ export const people = [
   },
   {
     id: 4,
-    name: "Resunga",
+    name: "aa",
     email: "kritchard0@ucla.edu",
     contact: "+911 7897897",
     gender: "Female",
     service: "Tyre/oil change",
     modal: "Benz Q2",
-    dob: "2002-11-30T06:50:42Z",
-    status: true,
-  },
-  {
-    id: 5,
-    name: "Gulmi",
-    email: "kritchard0@ucla.edu",
-    contact: "+911 7897897",
-    gender: "Female",
-    service: "Tyre/oil change",
-    modal: "BMW Q2",
     dob: "2002-11-30T06:50:42Z",
     status: true,
   },

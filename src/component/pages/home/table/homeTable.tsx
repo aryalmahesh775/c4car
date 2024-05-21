@@ -6,9 +6,10 @@ import {
   getCoreRowModel,
   useReactTable,
 } from "@tanstack/react-table";
-import ToggleButton from "../../../utils/buttons/toggleButton";
 import AcceptButton from "../../../staticButtons/acceptButton";
 import RejectButton from "../../../staticButtons/rejectButton";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { leftIcon, rightIcon } from "../../../../assets";
 
 type PeopleType = {
   id: number;
@@ -72,7 +73,7 @@ const HomeTable = () => {
   ];
 
   const handleSwitchStatus = (info) => {
-    console.log("mahesh you changed toggel data", info);
+    console.log("User you changed toggle data", info);
   };
 
   const table = useReactTable({
@@ -108,7 +109,7 @@ const HomeTable = () => {
             <tr key={row.id}>
               {row.getVisibleCells().map((cell) => (
                 <td
-                  className="border-borderColor text-base  border-[1px] px-1 py-2"
+                  className="border-borderColor text-base font-medium  border-[1px] px-1 py-2"
                   key={cell.id}
                 >
                   {flexRender(cell.column.columnDef.cell, cell.getContext())}
@@ -118,6 +119,38 @@ const HomeTable = () => {
           ))}
         </tbody>
       </table>
+
+      <div className="flex justify-center mt-5 gap-10">
+        <div className="px-4 py-2 border-gray-300 rounded-sm flex items-center border-[1px]">
+          <img src={leftIcon} alt="" />
+        </div>
+        <div className="flex gap-5">
+          <div className="px-4 py-2 border-redBackground text-redBackground rounded-sm border-[1px]">
+            {" "}
+            1{" "}
+          </div>
+          <div className="px-4 py-2 border-gray-200 rounded-sm border-[1px]">
+            {" "}
+            2{" "}
+          </div>
+          <div className="px-4 py-2 border-gray-200 rounded-sm border-[1px]">
+            {" "}
+            3{" "}
+          </div>
+          <div className="px-4 py-2 border-gray-200 rounded-sm border-[1px]">
+            {" "}
+            4{" "}
+          </div>
+          <div className="px-4 py-2 border-gray-200 rounded-sm border-[1px]">
+            {" "}
+            5{" "}
+          </div>
+        </div>
+        <div className="px-4 py-2 border-gray-200 rounded-sm flex items-center border-[1px]">
+          {" "}
+          <img src={rightIcon} alt="" />
+        </div>
+      </div>
     </div>
   );
 };

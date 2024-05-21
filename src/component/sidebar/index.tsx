@@ -18,6 +18,8 @@ import {
   customerRedIcon,
   customerWhiteIcon,
   c4carLogo,
+  group1956,
+  searchIcon,
 } from "../../assets";
 import { c4carLogoImage } from "../../assets";
 
@@ -53,7 +55,7 @@ const sidebarList = [
     path: "/Chat",
   },
   {
-    name: "offers",
+    name: "Offers",
     icon1: offerRedIcon,
     icon2: offerWhiteIcon,
     path: "/offers",
@@ -77,38 +79,37 @@ const Sidebar = () => {
 
   return (
     <div className="py-5 pl-2">
-      <div className="text-white flex flex-col gap-10 relative">
+      <div className="text-white flex flex-col gap-5 relative">
         <div className="min-h-[80px]">
-          {/* <div
-            onClick={() => setOpenSidebar(!openSidebar)}
-            className="text-white cursor-pointer shadow-2xl  duration-500   rounded-full bg-red-900 h-[20px] w-[20px] absolute top-20 right-[-10px]"
-          >
-            {" "}
-            <div className="flex justify-center items-center bg-white text-black font-extrabold shadow-2xl border-black border-[2px] rounded-full  duration-500">
-              {openSidebar ? "<" : ">"}
-            </div>
-          </div> */}
           <div className="text-3xl">
             {openSidebar ? (
               <div className="">
-                <img className="w-[80%] h-[80%]" src={c4carLogoImage} alt="" />
+                <div
+                  style={{
+                    backgroundImage: c4carLogo,
+                  }}
+                  className="w-[80%] h-[80%] flex justify-center items-center"
+                >
+                  <img className="z-50" src={group1956} alt="" />
+                </div>
+                {/* <img className="w-[80%] h-[80%]" src={c4carLogoImage} alt="" /> */}
               </div>
             ) : (
               <div className="w-[70px] h-[70px] flex justify-center items-center">
-                <img className="" src={c4carLogo} alt="" />
+                <img className="z-50" src={c4carLogo} alt="" />
               </div>
             )}
           </div>
         </div>
         <div className="">
-          <div className="flex flex-col gap-[12px] 2xl:gap-9">
+          <div className="flex flex-col gap-9">
             {sidebarList.map((item, index: number) => {
               return (
                 <NavLink
                   key={index}
-                  className={`pl-[15px] ${
+                  className={` ${
                     openSidebar ? "min-w-[200px]" : "min-w-[70px]"
-                  }  lg:pl-[20px] relative pr-[1px] py-5 rounded-l-full font-bold flex items-center text-[12px] xl:text-[14px]`}
+                  }  pl-[20px] relative pr-[1px] py-5 rounded-l-full font-bold flex items-center text-[17px]`}
                   to={item.path}
                   style={({ isActive }) => ({
                     color: isActive ? "#990000" : "white",
@@ -116,7 +117,7 @@ const Sidebar = () => {
                   })}
                 >
                   {({ isActive }) => (
-                    <div className="flex gap-3">
+                    <div className="flex items-center gap-2">
                       <div className="h-[20px] w-[20px]">
                         {isActive ? (
                           <img src={item.icon1} alt="" />
@@ -132,7 +133,7 @@ const Sidebar = () => {
 
                       {isActive && (
                         <div>
-                          <div className="h-[70px] w-[25px] absolute top-[-7px] rounded-l-3xl bg-white right-0"></div>
+                          <div className="h-[80px] w-[25px] absolute top-[-7px] rounded-l-3xl bg-white right-0"></div>
                         </div>
                       )}
                     </div>

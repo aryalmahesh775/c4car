@@ -38,7 +38,7 @@ const ServiceTable = () => {
   ];
 
   const handleSwitchStatus = (info) => {
-    console.log("mahesh you changed toggel data", info);
+    console.log("user you changed toggle data", info);
   };
 
   const table = useReactTable({

@@ -135,7 +135,6 @@ export const BarChart = ({
         }}
         data={data}
       />
-      {/* <Bar height={80} width={""} options={options} data={data} />; */}
     </div>
   );
 };
@@ -160,21 +159,16 @@ export const DoughnutChart = ({
 }: DoughnutChartProps) => {
   const doughnutData: ChartData<"doughnut", number[], string> = {
     labels,
+
     datasets: [
       {
         data,
         backgroundColor,
-        // borderWidth: 0,
-        // offset,
-        // borderRadius: 0,
       },
     ],
   };
 
   const doughnutOptions: ChartOptions<"doughnut"> = {
-    // responsive: true,
-    // spacing: 0,
-
     plugins: {
       legend: {
         display: legends,
@@ -184,7 +178,6 @@ export const DoughnutChart = ({
         },
       },
     },
-    // cutout,
   };
 
   return (

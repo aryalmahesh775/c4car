@@ -1,2 +1,0 @@
-[16032:25508:0520/101950.791:VERBOSE1:installer.cc(386)] "C:\Users\Victus\Desktop\mahesh\up\c4car\src\assets\utils\ChromeSetup.exe" --install=appguid={8A69D345-D564-463C-AFF1-A69D9E530F96}&iid={91C80ADB-60FC-60E6-C34A-5DA282C14D5D}&lang=en&browser=4&usagestats=1&appname=Google%20Chrome&needsadmin=prefers&ap=x64-statsdef_1&installdataindex=empty --enable-logging --vmodule=*/components/winhttp/*=1,*/components/update_client/*=2,*/chrome/updater/*=2
-[16032:25508:0520/102129.798:VERBOSE1:installer.cc(491)] Metainstaller WMain returned: 0, Windows error: 0

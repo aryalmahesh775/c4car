@@ -11,8 +11,8 @@ const HomePage = () => {
   return (
     <div>
       <div className="overflow-y-auto h-[calc(100vh-120px)]">
-        <div className="grid grid-cols-1 xl:grid-cols-2 gap-10 mx-5">
-          <div className="min-w-[500px] shadow-xl rounded-xl flex flex-col">
+        <div className="grid grid-cols-1 xl:grid-cols-2 mt-4 gap-10 mx-5 bg-white">
+          <div className="min-w-[500px] shadow-xl rounded-xl  flex flex-col">
             <div className="flex justify-between pt-2 px-2">
               <div className="flex items-center gap-3 text-2xl font-medium">
                 {" "}
@@ -48,10 +48,10 @@ const HomePage = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex flex-col gap-3 mt-4">
+              <div className="flex flex-col gap-3 mt-4 mr-3">
                 <div className="flex gap-2 items-center">
                   <div className="h-[10px] w-[10px] bg-textPrimaryDark"></div>{" "}
-                  appointments
+                  Appointments
                 </div>
                 <div className="flex gap-2 items-center">
                   {" "}

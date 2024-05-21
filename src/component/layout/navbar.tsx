@@ -7,12 +7,12 @@ import { Dialog } from "@headlessui/react";
 import InputField from "../form/input";
 import PrimaryButton from "../utils/buttons/primaryButton";
 
-const ImageMahesh = () => {
+const ImageUser = () => {
   return (
     <div className="h-[40px] w-[40px]  overflow-hidden rounded-full">
       <img
         className="h-full w-full bg-cover cursor-pointer"
-        src="https://i.pinimg.com/280x280_RS/54/ff/7a/54ff7a5fab4de5e729aa065e32e1ce64.jpg"
+        src="https://t3.ftcdn.net/jpg/05/53/79/60/360_F_553796090_XHrE6R9jwmBJUMo9HKl41hyHJ5gqt9oz.jpg"
         alt=""
       />
     </div>
@@ -44,7 +44,7 @@ const Navbar = () => {
   document.addEventListener("click", handleClickOutside, true);
 
   return (
-    <div className="bg-primary py-5">
+    <div className="bg-primary py-5 ">
       <div className="flex justify-end gap-10 items-center">
         <NavLink
           className={"rounded-lg relative"}
@@ -61,6 +61,7 @@ const Navbar = () => {
                 onClick={() => {
                   console.log("Order Details button clicked");
                 }}
+                fontSize="18px"
                 width={"200px"}
                 textColor={"black"}
                 bgColor={"white"}
@@ -110,9 +111,9 @@ const Navbar = () => {
               <div className="bg-white ">
                 <div className="flex justify-between items-center px-1 py-2 border-t-[0.5px] border-borderColor">
                   <div className="flex justify-between gap-2">
-                    <ImageMahesh />
+                    <ImageUser />
                     <div className="">
-                      <p className="font-medium text-lg">Mahesh</p>
+                      <p className="font-medium text-lg">User</p>
                       <p className="text-sm">Lorem ipsum dolor</p>
                     </div>
                   </div>
@@ -120,9 +121,9 @@ const Navbar = () => {
                 </div>
                 <div className="flex justify-between items-center px-1 py-2 border-t-[0.5px] border-borderColor">
                   <div className="flex justify-between gap-2">
-                    <ImageMahesh />
+                    <ImageUser />
                     <div className="">
-                      <p className="font-medium text-lg">Mahesh</p>
+                      <p className="font-medium text-lg">User</p>
                       <p className="text-sm">Lorem ipsum dolor</p>
                     </div>
                   </div>
@@ -130,9 +131,9 @@ const Navbar = () => {
                 </div>
                 <div className="flex justify-between items-center px-1 py-2 border-t-[0.5px] border-borderColor">
                   <div className="flex justify-between gap-2">
-                    <ImageMahesh />
+                    <ImageUser />
                     <div className="">
-                      <p className="font-medium text-lg">Mahesh</p>
+                      <p className="font-medium text-lg">User</p>
                       <p className="text-sm">Lorem ipsum dolor</p>
                     </div>
                   </div>
@@ -140,9 +141,9 @@ const Navbar = () => {
                 </div>
                 <div className="flex justify-between items-center px-1 py-2 border-t-[0.5px] border-borderColor">
                   <div className="flex justify-between gap-2">
-                    <ImageMahesh />
+                    <ImageUser />
                     <div className="">
-                      <p className="font-medium text-lg">Mahesh</p>
+                      <p className="font-medium text-lg">User</p>
                       <p className="text-sm">Lorem ipsum dolor</p>
                     </div>
                   </div>
@@ -155,12 +156,12 @@ const Navbar = () => {
 
         <div className="flex items-center gap-3">
           <p className="text-white font-medium text-base xl:text-xl">
-            Mahesh Aryal
+            User Name
           </p>
           <div className="h-[30px] w-[30px] xl:h-[50px] xl:w-[50px] overflow-hidden rounded-full">
             <img
               className="h-full w-full bg-cover cursor-pointer"
-              src="https://i.pinimg.com/280x280_RS/54/ff/7a/54ff7a5fab4de5e729aa065e32e1ce64.jpg"
+              src="https://t3.ftcdn.net/jpg/05/53/79/60/360_F_553796090_XHrE6R9jwmBJUMo9HKl41hyHJ5gqt9oz.jpg"
               alt=""
               onClick={() => {
                 setShowProfileMenu(true);
@@ -256,7 +257,7 @@ const Navbar = () => {
                             <div className="flex justify-center items-center pt-5">
                               <img
                                 className="h-[150px]  w-[150px] rounded-full bg-cover cursor-pointer"
-                                src="https://i.pinimg.com/280x280_RS/54/ff/7a/54ff7a5fab4de5e729aa065e32e1ce64.jpg"
+                                src="https://t3.ftcdn.net/jpg/05/53/79/60/360_F_553796090_XHrE6R9jwmBJUMo9HKl41hyHJ5gqt9oz.jpg"
                                 alt=""
                               />
                             </div>
