@@ -104,7 +104,7 @@ export const BarChart = ({
   };
 
   return (
-    <div className="h-[230px] w-full">
+    <div className="h-[200px] w-full">
       <Bar
         options={{
           maintainAspectRatio: false,
@@ -159,7 +159,6 @@ export const DoughnutChart = ({
 }: DoughnutChartProps) => {
   const doughnutData: ChartData<"doughnut", number[], string> = {
     labels,
-
     datasets: [
       {
         data,
@@ -171,7 +170,8 @@ export const DoughnutChart = ({
   const doughnutOptions: ChartOptions<"doughnut"> = {
     plugins: {
       legend: {
-        display: legends,
+        display: false,
+        // display: legends,
         position: "right",
         labels: {
           padding: 40,
@@ -181,7 +181,8 @@ export const DoughnutChart = ({
   };
 
   return (
-    <div className="h-[500px] w-[500px]">
+    // <div className="h-[300px] w-[300px]">
+    <div className=" pl-3 h-[290px] w-[290px]">
       <Doughnut data={doughnutData} options={doughnutOptions} />
     </div>
   );

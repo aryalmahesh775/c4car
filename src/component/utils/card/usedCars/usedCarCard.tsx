@@ -72,10 +72,18 @@ const UsedCarCard = ({ item }) => {
         <div className=" fixed inset-0 bg-black/30 flex w-screen items-center justify-center p-4">
           <div className="h-auto w-[700px] rounded-md relative bg-white">
             <div className=" pb-5">
+              <div
+                onClick={() => {
+                  setOpenDeleteModal(false);
+                }}
+                className="absolute h-[20px] w-[20px] bg-[#FF0000] text-white flex justify-center items-center right-1 top-1 rounded-full cursor-pointer"
+              >
+                x
+              </div>
               <p className="text-xl py-8 flex justify-center">
                 Do you really want to delete Data
               </p>
-              <div className="flex justify-center py-5 gap-5">
+              <div className="flex justify-center py-3 mt-5 gap-5">
                 <PrimaryButton
                   title={"Conform"}
                   onClick={() => {

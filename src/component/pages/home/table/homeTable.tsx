@@ -12,29 +12,39 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { leftIcon, rightIcon } from "../../../../assets";
 
 type PeopleType = {
-  id: number;
   name: string;
+  date: string;
   email: string;
   contact: string;
-  gender: string;
   service: string;
   modal?: string;
-  dob: string;
   status: boolean;
 };
+// type PeopleType = {
+//   id: number;
+//   name: string;
+//   email: string;
+//   contact: string;
+//   gender: string;
+//   service: string;
+//   modal?: string;
+//   dob: string;
+//   status: boolean;
+// };
 
 const HomeTable = () => {
   const [data, setData] = React.useState<PeopleType[]>(() => [...people]);
   const columnHelper = createColumnHelper<PeopleType>();
 
   const columns = [
-    columnHelper.accessor("id", {
-      cell: (info) => info.getValue(),
-    }),
     columnHelper.accessor((row) => row.name, {
       header: () => "Name",
       id: "name",
       cell: (info) => <i>{info.getValue()}</i>,
+    }),
+    columnHelper.accessor("date", {
+      header: "Date",
+      footer: (info) => info.column.id,
     }),
     columnHelper.accessor("email", {
       header: () => "Email",
@@ -42,11 +52,7 @@ const HomeTable = () => {
       footer: (info) => info.column.id,
     }),
     columnHelper.accessor("contact", {
-      header: () => <span>contact</span>,
-      footer: (info) => info.column.id,
-    }),
-    columnHelper.accessor("gender", {
-      header: "gender",
+      header: () => <span>Contact</span>,
       footer: (info) => info.column.id,
     }),
     columnHelper.accessor("service", {
@@ -57,10 +63,7 @@ const HomeTable = () => {
       header: "Modal no",
       footer: (info) => info.column.id,
     }),
-    columnHelper.accessor("dob", {
-      header: "date of Birth",
-      footer: (info) => info.column.id,
-    }),
+
     columnHelper.accessor("status", {
       header: () => "Status",
       cell: (info) => (
@@ -120,33 +123,33 @@ const HomeTable = () => {
         </tbody>
       </table>
 
-      <div className="flex justify-center mt-5 gap-10">
-        <div className="px-4 py-2 border-gray-300 rounded-sm flex items-center border-[1px]">
+      <div className="flex justify-center mt-3 gap-10">
+        <div className="px-4 py-2 cursor-pointer border-gray-300 rounded-sm flex items-center border-[1px]">
           <img src={leftIcon} alt="" />
         </div>
         <div className="flex gap-5">
-          <div className="px-4 py-2 border-redBackground text-redBackground rounded-sm border-[1px]">
+          <div className="px-4 py-2 cursor-pointer border-redBackground text-redBackground rounded-sm border-[1px]">
             {" "}
             1{" "}
           </div>
-          <div className="px-4 py-2 border-gray-200 rounded-sm border-[1px]">
+          <div className="px-4 py-2 cursor-pointer border-gray-200 rounded-sm border-[1px]">
             {" "}
             2{" "}
           </div>
-          <div className="px-4 py-2 border-gray-200 rounded-sm border-[1px]">
+          <div className="px-4 py-2 cursor-pointer border-gray-200 rounded-sm border-[1px]">
             {" "}
             3{" "}
           </div>
-          <div className="px-4 py-2 border-gray-200 rounded-sm border-[1px]">
+          <div className="px-4 py-2 cursor-pointer border-gray-200 rounded-sm border-[1px]">
             {" "}
             4{" "}
           </div>
-          <div className="px-4 py-2 border-gray-200 rounded-sm border-[1px]">
+          <div className="px-4 py-2 cursor-pointer border-gray-200 rounded-sm border-[1px]">
             {" "}
             5{" "}
           </div>
         </div>
-        <div className="px-4 py-2 border-gray-200 rounded-sm flex items-center border-[1px]">
+        <div className="px-4 py-2 cursor-pointer border-gray-200 rounded-sm flex items-center border-[1px]">
           {" "}
           <img src={rightIcon} alt="" />
         </div>

@@ -5,9 +5,9 @@ import CustomerTable from "./table";
 const CustomersPage = () => {
   const [openModal, setOpenModal] = useState<boolean>(false);
   return (
-    <div className="h-[calc(100vh-120px)] overflow-y-auto">
+    <div className="h-[calc(100vh-120px)] overflow-y-auto sidebarScroll">
       <div className="flex px-5">
-        <div className="w-full my-2 overflow-y-auto">
+        <div className="w-full my-2 overflow-y-auto relative">
           <CustomerTable />
         </div>
       </div>

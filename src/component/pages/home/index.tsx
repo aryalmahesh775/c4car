@@ -10,9 +10,15 @@ const HomePage = () => {
 
   return (
     <div>
-      <div className="overflow-y-auto h-[calc(100vh-120px)]">
-        <div className="grid grid-cols-1 xl:grid-cols-2 mt-4 gap-10 mx-5 bg-white">
-          <div className="min-w-[500px] shadow-xl rounded-xl  flex flex-col">
+      <div className="overflow-y-auto h-[calc(100vh-120px)] sidebarScroll flex flex-col justify-evenly">
+        <div className="grid grid-cols-1 xl:grid-cols-2 mt-2 gap-10 mx-5 bg-white">
+          <div
+            style={{
+              boxShadow:
+                "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+            }}
+            className="min-w-[500px] rounded-xl  flex flex-col"
+          >
             <div className="flex justify-between pt-2 px-2">
               <div className="flex items-center gap-3 text-2xl font-medium">
                 {" "}
@@ -33,7 +39,7 @@ const HomePage = () => {
                 </div>
               </div>
             </div>
-            <div className="flex justify-between items-center px-2 my-3">
+            <div className="flex justify-between items-center px-2 my-2">
               <div className="flex gap-5 text-textSecondary">
                 <div className="border-[2px] rounded-md border-lightBorderColor text-lg px-3 py-1">
                   Total Appointment
@@ -64,7 +70,13 @@ const HomePage = () => {
               <BarCharts />
             </div>
           </div>
-          <div className="h-[400px] shadow-xl rounded-xl pt-2 px-2 ">
+          <div
+            style={{
+              boxShadow:
+                "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+            }}
+            className="h-[350px]  rounded-xl pt-2 px-2 "
+          >
             <div className="flex justify-between">
               <div className="flex items-center gap-3 text-2xl font-medium">
                 {" "}
@@ -85,7 +97,7 @@ const HomePage = () => {
                 </div>
               </div>
             </div>
-            <div className="mt-[-100px] flex justify-center">
+            <div className="flex justify-center items-center">
               <PieCharts />
             </div>
           </div>

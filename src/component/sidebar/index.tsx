@@ -81,18 +81,17 @@ const Sidebar = () => {
     <div className="py-5 pl-2">
       <div className="text-white flex flex-col gap-5 relative">
         <div className="min-h-[80px]">
-          <div className="text-3xl">
+          <div className="text-3xl flex justify-center items-center">
             {openSidebar ? (
               <div className="">
                 <div
                   style={{
                     backgroundImage: c4carLogo,
                   }}
-                  className="w-[80%] h-[80%] flex justify-center items-center"
+                  className="w-[90%] h-[90%] flex justify-center items-center"
                 >
                   <img className="z-50" src={group1956} alt="" />
                 </div>
-                {/* <img className="w-[80%] h-[80%]" src={c4carLogoImage} alt="" /> */}
               </div>
             ) : (
               <div className="w-[70px] h-[70px] flex justify-center items-center">
@@ -102,7 +101,8 @@ const Sidebar = () => {
           </div>
         </div>
         <div className="">
-          <div className="flex flex-col gap-9">
+          {/* <div className="flex flex-col gap-9"> */}
+          <div className="flex flex-col gap-4">
             {sidebarList.map((item, index: number) => {
               return (
                 <NavLink

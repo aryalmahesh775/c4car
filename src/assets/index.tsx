@@ -36,6 +36,7 @@ import leftIcon from "./utils/leftIcon.svg";
 import rightIcon from "./utils/rightIcon.svg";
 import phoneIcon from "./utils/phoneIcon.svg";
 import group1956 from "./utils/Group1956.svg";
+import cyberSecurity from "./utils/cyberSecurity.svg";
 
 export {
   homeRedIcon,
@@ -76,4 +77,5 @@ export {
   rightIcon,
   phoneIcon,
   group1956,
+  cyberSecurity,
 };

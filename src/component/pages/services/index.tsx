@@ -46,7 +46,7 @@ const ServicePage = () => {
                   <div className="p-5 flex flex-col gap-5">
                     <div className="relative">
                       <input
-                        className=" border-[1px] w-full h-[50px] mt-1 transition bg-white ease-in-out delay-150 border-[#ccc] truncate leading-[19.07px] text-gray-600 pr-[50px] text-lg py-[8px] px-2 lg:pl-3  rounded-md  focus:outline-none focus:border-blue-300"
+                        className=" border-[1px] w-full h-[50px] mt-1 placeholder:text-lg transition bg-white ease-in-out delay-150 border-[#ccc] truncate leading-[19.07px] text-gray-600 pr-[50px] text-lg py-[8px] px-2 lg:pl-3  rounded-md  focus:outline-none focus:border-blue-300"
                         type="text"
                         value={serviceName}
                         placeholder="Service Name"
@@ -58,8 +58,8 @@ const ServicePage = () => {
                     </div>
                     <div className="relative">
                       <input
-                        className=" border-[1px] w-full h-[50px] mt-1 transition bg-white ease-in-out delay-150 border-[#ccc] truncate leading-[19.07px] text-gray-600 text-lg py-[8px] px-2 lg:pl-3  rounded-md  focus:outline-none focus:border-blue-300"
-                        type="number"
+                        className=" border-[1px] w-full h-[50px] mt-1 placeholder:text-lg transition bg-white ease-in-out delay-150 border-[#ccc] truncate leading-[19.07px] text-gray-600 text-lg py-[8px] px-2 lg:pl-3  rounded-md  focus:outline-none focus:border-blue-300"
+                        type="text"
                         value={servicePrice}
                         placeholder="Service Price"
                         onChange={(e) => setServicePrice(e.target.value)}
